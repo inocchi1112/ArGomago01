@@ -1,0 +1,160 @@
+<html>
+<head>
+ <title>AR</title>
+ <meta http-equiv="content-type" charset="utf-8">
+</head>
+
+<!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js --> 
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src="https://unpkg.com/aframe-animation-component@4.2.0/dist/aframe-animation-component.min.js"></script>
+<script src="https://unpkg.com/aframe-animation-timeline-component@1.6.0/dist/aframe-animation-timeline-component.min.js"></script>
+  
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam; debug: false; debugUIEnabled: false; detectionMode: color_and_matrix; matrixCodeType: 3x3;' animation-timeline__1="timeline: #myTimeline; loop: true">
+	
+		<a-assets>
+			<a-timeline id="myTimeline">
+				<!-- gomago01 -->
+				<a-timeline-animation select="#gomago1" name="visible"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpup" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpup" offset="500"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visible" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="scale""></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visibleoff""></a-timeline-animation>
+				<a-timeline-animation select="#gomago1" name="turn1" offset="300"></a-timeline-animation>
+				
+				<a-timeline-group>
+					<a-timeline-animation select="#gomago1" name="visibleoff"></a-timeline-animation>
+					<a-timeline-animation select="#gomago2" name="visible"></a-timeline-animation>
+					<a-timeline-animation select="#gomago2" name="turn1ex"></a-timeline-animation>
+				</a-timeline-group>
+				<a-timeline-animation select="#gomago2" name="turn2"></a-timeline-animation>
+				
+				<!-- gomago02 -->
+				<a-timeline-animation select="#gomago2" name="jumpup" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="jumpup" offset="500"></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visible" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="scale""></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visibleoff""></a-timeline-animation>
+				<a-timeline-animation select="#gomago2" name="turn1" offset="300"></a-timeline-animation>
+				
+				<a-timeline-group>
+					<a-timeline-animation select="#gomago2" name="visibleoff"></a-timeline-animation>
+					<a-timeline-animation select="#gomago3" name="visible"></a-timeline-animation>
+					<a-timeline-animation select="#gomago3" name="turn1ex"></a-timeline-animation>
+				</a-timeline-group>
+				<a-timeline-animation select="#gomago3" name="turn2"></a-timeline-animation>
+				
+				<!-- gomago03 -->
+				<a-timeline-animation select="#gomago3" name="jumpup" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="jumpup" offset="500"></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visible" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="scale""></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visibleoff""></a-timeline-animation>
+				<a-timeline-animation select="#gomago3" name="turn1" offset="300"></a-timeline-animation>
+				
+				<a-timeline-group>
+					<a-timeline-animation select="#gomago3" name="visibleoff"></a-timeline-animation>
+					<a-timeline-animation select="#gomago4" name="visible"></a-timeline-animation>
+					<a-timeline-animation select="#gomago4" name="turn1ex"></a-timeline-animation>
+				</a-timeline-group>
+				<a-timeline-animation select="#gomago4" name="turn2"></a-timeline-animation>
+				
+				<!-- gomago03 -->
+				<a-timeline-animation select="#gomago4" name="jumpup" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="jumpup" offset="500"></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="jumpup" offset="100"></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="jumpdown"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visible" offset="300"></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="scale""></a-timeline-animation>
+				<a-timeline-animation select="#poker1" name="visibleoff""></a-timeline-animation>
+				<a-timeline-animation select="#gomago4" name="turn1" offset="300"></a-timeline-animation>
+				
+				<a-timeline-group>
+					<a-timeline-animation select="#gomago4" name="visibleoff"></a-timeline-animation>
+					<a-timeline-animation select="#gomago1" name="visible"></a-timeline-animation>
+					<a-timeline-animation select="#gomago1" name="turn1ex"></a-timeline-animation>
+				</a-timeline-group>
+				<a-timeline-animation select="#gomago1" name="turn2"></a-timeline-animation>
+			</a-timeline>
+			
+			<a-mixin id="mix_gomago"
+				geometry="primitive: plane"
+        		material="color: #FFF"
+        		width="1"
+        		height="1" 
+				animation__visible="property: visible; from: false; to: true; dur: 1; autoplay: false"
+				animation__visibleoff="property: visible; from: true; to: false; dur: 1; autoplay: false"
+				animation__jumpup="property: position; to: 0 0.075 0; dur: 50; autoplay: false"
+				animation__jumpdown="property: position; from: 0 0.075 0; to: 0 0 0; dur: 50; autoplay: false"
+				animation__turn1="property: rotation; from: 0 0 0; to: 0 -180 0; dur: 200; autoplay: false"
+				animation__turn1ex="property: rotation; from: 0 0 0; to: 0 -180 0; dur: 1; autoplay: false"
+				animation__turn2="property: rotation; from: 0 -180 0; to: 0 -360 0; dur: 200; autoplay: false"
+				animation__scaleup="property: scale; to: 1.5 1.5 1.5; dur: 1000; autoplay: false"
+				animation__scaledown="property: scale; from: 1.5 1.5 1.5; to: 1 1 1; dur: 1000; autoplay: false"
+        		visible="false"
+			></a-mixin>
+			
+			
+			<a-mixin id="mix_poker"
+				geometry="primitive: plane"
+        		material="src: img/poker.png; color: #FFF; transparent: true"
+        		width="1"
+        		height="1" 
+				animation__visible="property: visible; from: false; to: true; dur: 1; autoplay: false"
+				animation__visibleoff="property: visible; from: true; to: false; dur: 1; autoplay: false"
+				animation__scale="property: scale; from: 0.5 0.5 0.5; to: 1.2 1.2 1.2; dur: 1000; autoplay: false"
+				position="0 -0.2 0.1"
+        		visible="false"
+			></a-mixin>
+			
+			<a-mixin id="text"
+				text="align: center; color: #FF8027; width: 6"
+				animation__scale="property: scale; from: 0.5 0.5 0.5; to: 1.2 1.2 1.2; dur: 1000; autoplay: false"
+				animation__visible="property: visible; from: false; to: true; dur: 1; autoplay: false"
+				animation__visibleoff="property: visible; from: true; to: false; dur: 1; autoplay: false"
+				position="0 0.1 0.3"
+        		rotation="0 0 0"
+			></a-mixin>
+			
+		</a-assets>
+		
+		<a-marker preset="custom" type="pattern" url="marker/pattern-marker.patt">
+			<a-entity rotation="-90 0 0" scale="1.5 1.5 1.5">
+				<a-entity id="gomago1" mixin="mix_gomago" material="src: img/gomago01.png"></a-entity>
+				<a-entity id="gomago2" mixin="mix_gomago" material="src: img/gomago02.png"></a-entity>
+				<a-entity id="gomago3" mixin="mix_gomago" material="src: img/gomago03.png"></a-entity>
+				<a-entity id="gomago4" mixin="mix_gomago" material="src: img/gomago04.png"></a-entity>
+				<a-entity id="poker1" mixin="mix_poker"></a-entity>
+			</a-entity>
+		</a-marker>
+			
+		<a-entity camera></a-entity>
+		<a-entity light="type: ambient; color: #CCC"></a-entity>
+		<a-entity light="type: directional; color: #FFF; intensity: 0.5" position="-1 1 0"></a-entity>
+	</a-scene>
+</body>
+</html>
